@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+
+<div class="scrollWatcher"></div>
+
+<img class="logo" src="./images/logo.png">
+
+    <div class="navbar">
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a class='dropdown-arrow'>Photography</a>
+                  <ul class='sub-menus'>
+                  <li><a href="./classWork.html">Class Work</a></li>
+                  <li><a href="./nature.html">Nature</a></li>
+                  <li><a href="./machinery.html">Machinery</a></li>
+                  <li><a href="./scaleModels.html">Scale Models</a></li>
+                </ul>
+              </li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+    </div>
+
+    <a class="photoAnchor1" href="./classWork.html">
+        <div class="img-wrapper">
+            <image class="hero blur" src="./images/schooldeer.jpg"></image>
+            <div class="img-text fade">SCHOOL WORK</div>
+        </div>
+    </a>
+    
+    <a class="photoAnchor2" href="./nature.html">
+        <div class="img-wrapper">
+            <image class="hero blur" src="./images/naturewhitetrees.JPG"></image>
+            <div class="img-text fade">NATURE</div>
+        </div>
+    </a>
+
+    <a class="photoAnchor3" href="./machinery.html">
+        <div class="img-wrapper">
+            <image class="hero blur" src="./images/ang01.jpg"></image>
+            <div class="img-text fade">MACHINERY</div>
+        </div>
+    </a>
+
+    <a class="photoAnchor4" href="./scaleModels.html">
+        <div class="img-wrapper">
+            <image class="hero blur" src="./images/modelalex1.JPG"></image>
+            <div class="img-text fade">SCALE MODELS</div>
+        </div>
+    </a>
+
+    <div style="height: 50px"></div>
+
+</body>
+</html>

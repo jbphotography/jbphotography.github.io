@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+
+<div class="scrollWatcher"></div>
+
+<img class="logo" src="./images/logo.png">
+
+    <div class="navbar">
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a class='dropdown-arrow'>Photography</a>
+                <ul class='sub-menus'>
+                  <li><a href="./classWork.html">Class Work</a></li>
+                  <li><a href="./nature.html">Nature</a></li>
+                  <li><a href="./machinery.html">Machines</a></li>
+                  <li><a href="./scaleModels.html">Scale Models</a></li>
+                </ul>
+              </li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+    </div>
+
+
+    <div class="centerGallery">
+      <div class="flexGallery">
+          <div class="row">
+              <div class="column">
+                  <img class="schoolImg" src="./images/naturecove.JPG">
+                  <img class="schoolImg" src="./images/naturewetleave.JPG">
+                  <img class="schoolImg" src="./images/naturewetleave2.JPG">
+              </div>
+              <div class="column">
+                  <img class="schoolImg" src="./images/naturepinktree.JPG">
+                  <img class="schoolImg" src="./images/natureroots.JPG">
+                  <img class="schoolImg" src="./images/natureyellowflow.JPG">
+              </div>
+              <div class="column">
+                  <img class="schoolImg" src="./images/naturewhitetrees.JPG">
+                  <img class="schoolImg" src="./images/naturewhiteflower2.JPG">
+                  <img class="schoolImg" src="./images/naturewhiteflower.JPG">
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <script>
+      const lightbox = document.createElement('div')
+      lightbox.id = 'lightbox'
+      document.body.appendChild(lightbox)
+  
+      const images = document.querySelectorAll('img')
+      images.forEach(image => {
+      image.addEventListener('click', e => {
+      lightbox.classList.add('active')
+      const img = document.createElement('img')
+      img.src = image.src
+      while (lightbox.firstChild) {
+        lightbox.removeChild(lightbox.firstChild)
+      }
+      lightbox.appendChild(img)
+    })
+  })
+  
+      lightbox.addEventListener('click', e => {
+      if (e.target !== e.currentTarget) return
+      lightbox.classList.remove('active')
+  })
+  </script>
+
+
+</body>
+</html>

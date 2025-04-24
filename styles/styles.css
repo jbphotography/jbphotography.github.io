@@ -1,0 +1,521 @@
+/*JB Photography Master Style Page*/
+
+/*applies dotted BG*/
+body {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 25px; /*content spacer*/
+    background-color: black;
+    background-image: radial-gradient(circle at 1px 1px, grey 1px, transparent 0);
+    background-size: 40px 40px;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+    scrollbar-gutter: stable; /*removes scrollbar area*/
+}
+
+/*JB Photography Header Logo*/
+.logo {
+    max-width: 590px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+/*Home 'School Work' Image Link*/
+.photoAnchor1 {
+    width: fit-content;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    transition: -webkit-box-shadow 2s;
+}
+
+/*Home Glow Hover Effect for 'School Work' Image Link*/
+.photoAnchor1:hover {
+    -webkit-box-shadow:0px 0px 105px 10px rgba(140, 255, 46, 0.9);
+    -moz-box-shadow: 0px 0px 105px 10px rgba(140, 255, 46, 0.9);
+    box-shadow: 0px 0px 105px 10px rgba(140, 255, 46, 0.9);
+}
+
+/*Home 'Nature' Image Link*/
+.photoAnchor2 {
+    width: fit-content;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    transition: -webkit-box-shadow 2s;
+}
+
+/*Home Glow Hover Effect for 'Nature' Image Link*/
+.photoAnchor2:hover {
+    -webkit-box-shadow:0px 0px 105px 10px rgba(197, 243, 255, 0.9);
+    -moz-box-shadow: 0px 0px 105px 10px rgba(197, 243, 255, 0.9);
+    box-shadow: 0px 0px 105px 10px rgba(197, 243, 255, 0.9);
+}
+
+/*Home 'Machinery' Image Link*/
+.photoAnchor3 {
+    width: fit-content;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    transition: -webkit-box-shadow 2s;
+}
+
+/*Home Glow Hover Effect for 'Machinery' Image Link*/
+.photoAnchor3:hover {
+    -webkit-box-shadow:0px 0px 105px 10px rgba(101, 181, 255, 0.9);
+    -moz-box-shadow: 0px 0px 105px 10px rgba(101, 181, 255, 0.9);
+    box-shadow: 0px 0px 105px 10px rgba(101, 181, 255, 0.9);
+}
+
+/*Home 'Scale Models' Image Link*/
+.photoAnchor4 {
+    width: fit-content;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    transition: -webkit-box-shadow 2s;
+}
+
+/*Home Glow Hover Effect for 'Scale Models' Image Link*/
+.photoAnchor4:hover {
+    -webkit-box-shadow:0px 0px 105px 10px rgba(255, 70, 46, 0.9);
+    -moz-box-shadow: 0px 0px 105px 10px rgba(255, 70, 46, 0.9);
+    box-shadow: 0px 0px 105px 10px rgba(255, 70, 46, 0.9);
+}
+
+/*Styling for the 4 homepage hero images*/
+.hero {
+    max-width: 60vw;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    border: 1px rgb(66, 66, 66) solid;
+}
+
+/*Overlay for the 4 homepage hero images*/
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+/*Overlay Text for the 4 homepage hero images*/
+.img-text {
+    color: white;
+    font-weight: bold;
+}
+
+/*Wrapper covers hero images by 100%*/
+.img-wrapper > .hero {
+    display: block;
+    width: 100%;
+}
+
+/*Overlay Text Styling*/
+.img-wrapper > .img-text {
+    position: absolute;
+    inset: 0;
+    font-size: 32pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Transition times for hero image effects*/
+.img-wrapper > .hero,
+.img-wrapper > .img-text {
+    transition: 200ms ease-in-out;
+}
+
+.img-wrapper:hover > .img-text.fade {
+    opacity: 1;
+}
+
+.img-wrapper > .img-text.fade {
+    opacity: 0;
+}
+
+/*Applies blur to hero images on home on hover*/
+.img-wrapper:hover > .blur {
+    filter: blur(5px);
+}
+
+/*Navbar at top that scrolls with page*/
+.navbar {
+    position: sticky;
+    top: 20px;
+    z-index: 5;
+}
+
+/*Top Yellow Horizontal Scroll Bar that tracks with page progress*/
+.scrollWatcher {
+    height: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background: yellow;
+    width: 100%;
+    scale: 0 1;
+    animation: scrollWatcher linear;
+    animation-timeline: scroll();
+    transform-origin: left;
+}
+
+@keyframes scrollWatcher {
+    to { scale: 1 1; }
+}
+
+/*removes default scrollbar*/
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+
+/*Styling for the navigation bar*/
+#menu {
+	background: rgba( 255, 255, 255, 0.55 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+	height: 45px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+#menu ul, #menu li {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none
+}
+#menu ul {
+	width: 100%;
+	text-align: center;
+}
+#menu li {
+	display: inline-block;
+	position: relative;
+}
+#menu a {
+	display: block;
+	line-height: 45px;
+	padding: 0 14px;
+	text-decoration: none;
+	color: #000000;
+	font-size: 16px;
+    font-weight: bold;
+	text-transform: uppercase;
+}
+#menu a.dropdown-arrow:after {
+	content: "\25BF";
+	margin-left: 5px;
+}
+#menu li a:hover {
+	color: #444444;
+	background: #F2F2F2;
+}
+#menu input {
+	display: none;
+	margin: 0;
+	padding: 0;
+	height: 45px;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer
+}
+#menu label {
+	display: none;
+	line-height: 45px;
+	text-align: center;
+	position: absolute;
+	left: 35px
+}
+#menu label:before {
+	font-size: 1.6em;
+	color: #FFFFFF;
+	content: "\2261"; 
+	margin-left: 20px;
+}
+#menu ul.sub-menus{
+	height: auto;
+	overflow: hidden;
+	width: 170px;
+	background: #444444;
+	position: absolute;
+	z-index: 99;
+	display: none;
+}
+#menu ul.sub-menus li {
+	display: block;
+	text-align: left;
+	width: 100%;
+}
+#menu ul.sub-menus a {
+	color: #FFFFFF;
+	font-size: 16px;
+}
+#menu li:hover ul.sub-menus {
+	display: block
+}
+#menu ul.sub-menus a:hover{
+	background: #F2F2F2;
+	color: #444444;
+}
+
+/*media queries for home*/
+@media screen and (max-width: 1500px) {
+    .hero {
+        max-width: 80vw;
+    }
+}
+
+/*(about page) self portrait image*/
+.aboutPic {
+    max-width: 55vw;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    padding: 15px;
+    background-color: #011835;
+    transition: -webkit-box-shadow 2s;
+}
+
+/*(about page) center div that contains image and textbox*/
+.photoandText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    width: 75vw;
+
+}
+
+/*(about page) glows background behind image on hover*/
+.aboutPic:hover {
+    -webkit-box-shadow:0px 0px 105px 10px #00306b;
+    -moz-box-shadow: 0px 0px 105px 10px #00306b;
+    box-shadow: 0px 0px 105px 10px #00306b;
+}
+
+/*(about page)*/
+.aboutText {
+    color: white;
+    font-size: 16pt;
+    font-weight: bold;
+    width: fit-content;
+    padding: 15px;
+    background-color: #011835;
+    border-radius: 0px 5px 5px 0px;
+}
+
+/*media queries for about page*/
+@media screen and (max-width: 1140px) {
+.photoandText {
+    flex-direction: column;
+    
+}
+
+.aboutText {
+    margin-top: 0;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.aboutPic {
+    max-width: 80vw;
+}
+}
+
+/*main gallery div that contains all images on photography pages*/
+.flexGallery {
+    width: 100vw;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.centerGallery {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    justify-self: center;
+    margin-left: 25px;
+}
+
+/*centers image content when page shrinks size*/
+@media screen and (max-width: 1000px) {
+    .centerGallery {
+      margin-left: 0;
+    }
+}
+
+img {
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+  
+/* Create 3 equal columns that sits next to each other */
+.column {
+    flex: 32%;
+    max-width: 32%;
+    padding: 0 4px;
+}
+  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+  
+/*displays only 1 column when screen is too small*/
+@media screen and (max-width: 1000px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+      margin: 10px;
+    }
+    .topText {
+        margin-right: 20px;
+    }
+}
+
+/*overlay image that opens when you click on an image in the gallery*/
+#lightbox {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+}
+  
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+#lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    padding: 4px;
+    background-color: black;
+    border: 2px solid white;
+}
+
+.schoolImg {
+    transition: -webkit-box-shadow 2s;
+}
+
+/*hover effect for images inside of photography galleries (ignore name i'm too lazy to change all of the variables*/
+.schoolImg:hover {
+    -webkit-box-shadow:0px 0px 105px 10px rgba(101, 181, 255, 0.9);
+    -moz-box-shadow: 0px 0px 105px 10px rgba(101, 181, 255, 0.9);
+    box-shadow: 0px 0px 105px 10px rgba(101, 181, 255, 0.9);
+}
+
+/*form on contact page*/
+.formDiv {
+    background-color: #00306b;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    max-width: 90%;
+    align-self: center;
+    padding: 15px;
+    transition: -webkit-box-shadow 2s;
+}
+
+.formDiv:hover {
+    -webkit-box-shadow:0px 0px 105px 10px #00306b;
+    -moz-box-shadow: 0px 0px 105px 10px #00306b;
+    box-shadow: 0px 0px 105px 10px #00306b;
+}
+
+.formHeader {
+    color: white;
+    text-align: center;
+}
+
+.formDesc {
+    color: white;
+    font-size: 16pt;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.formLabel {
+    color: white;
+    font-size: 16pt;
+}
+
+.form-control {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+.custom-button {
+    width: fit-content;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    margin-top: 15px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    user-select: none;
+    color: #ffffff;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: #000000;
+    border-right-color: #000000;
+    border-bottom-color: #000000;
+    border-left-color: #000000;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: #f53b3b;
+  }
+  
+  .custom-button:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+  }
+  

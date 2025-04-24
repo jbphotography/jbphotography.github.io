@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+
+<div class="scrollWatcher"></div>
+
+<img class="logo" src="./images/logo.png">
+
+    <div class="navbar">
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a class='dropdown-arrow'>Photography</a>
+                <ul class='sub-menus'>
+                  <li><a href="./classWork.html">Class Work</a></li>
+                  <li><a href="./nature.html">Nature</a></li>
+                  <li><a href="./machinery.html">Machines</a></li>
+                  <li><a href="./scaleModels.html">Scale Models</a></li>
+                </ul>
+              </li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+    </div>
+
+    <div class="formDiv">
+      <div>
+          <h1 access="false" class="formHeader">CONTACT</h1>
+      </div>
+      <div>
+          <p access="false" class="formDesc">Feel free to send a message and I'll do my best to get back with a prompt reply!</p>
+      </div>
+      <div>
+          <label for="formName" class="formLabel">Name</label><br>
+          <input type="text" class="form-control" name="formName" access="false" id="formName">
+      </div>
+      <br>
+      <div>
+          <label for="formEmail" class="formLabel">Email</label><br>
+          <input type="text" class="form-control" name="formEmail" access="false" id="formEmail">
+      </div>
+      <br>
+      <div>
+          <label for="formMessage" class="formLabel">Message</label><br>
+          <textarea rows="4" cols="50"></textarea>
+      </div>
+      <button class="custom-button" onclick="alert('Thanks for the message, I will get back to you as soon as possible! -Josh');window.location.reload();">Submit</button>
+  </div>
+
+</body>
+</html>
