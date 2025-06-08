@@ -24,6 +24,10 @@ body {
     align-self: center;
 }
 
+.logo:hover {
+    cursor: pointer;
+}
+
 /*Home 'School Work' Image Link*/
 .photoAnchor1 {
     width: fit-content;
