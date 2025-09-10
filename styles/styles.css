@@ -18,6 +18,7 @@ body {
 
 /*JB Photography Header Logo*/
 .logo {
+    width: 95%;
     max-width: 590px;
     display: flex;
     justify-self: center;
@@ -39,9 +40,9 @@ body {
 
 /*Home Glow Hover Effect for 'School Work' Image Link*/
 .photoAnchor1:hover {
-    -webkit-box-shadow:0px 0px 105px 10px rgba(140, 255, 46, 0.9);
-    -moz-box-shadow: 0px 0px 105px 10px rgba(140, 255, 46, 0.9);
-    box-shadow: 0px 0px 105px 10px rgba(140, 255, 46, 0.9);
+    -webkit-box-shadow:0px 0px 105px 10px rgba(255, 196, 46, 0.9);
+    -moz-box-shadow: 0px 0px 105px 10px rgba(255, 196, 46, 0.9);
+    box-shadow: 0px 0px 105px 10px rgba(255, 196, 46, 0.9);
 }
 
 /*Home 'Nature' Image Link*/
@@ -87,14 +88,14 @@ body {
 
 /*Home Glow Hover Effect for 'Scale Models' Image Link*/
 .photoAnchor4:hover {
-    -webkit-box-shadow:0px 0px 105px 10px rgba(255, 70, 46, 0.9);
-    -moz-box-shadow: 0px 0px 105px 10px rgba(255, 70, 46, 0.9);
-    box-shadow: 0px 0px 105px 10px rgba(255, 70, 46, 0.9);
+    -webkit-box-shadow:0px 0px 105px 10px rgba(84, 255, 46, 0.9);
+    -moz-box-shadow: 0px 0px 105px 10px rgba(84, 255, 46, 0.9);
+    box-shadow: 0px 0px 105px 10px rgba(84, 255, 46, 0.9);
 }
 
 /*Styling for the 4 homepage hero images*/
 .hero {
-    max-width: 60vw;
+    max-height: 50vh;
     display: flex;
     justify-self: center;
     align-self: center;
