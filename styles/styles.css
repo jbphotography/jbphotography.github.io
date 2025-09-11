@@ -184,11 +184,10 @@ body {
 
 /*Styling for the navigation bar*/
 #menu {
-	background: rgba( 255, 255, 255, 0.55 );
+	background: #011835;
     backdrop-filter: blur( 5px );
     -webkit-backdrop-filter: blur( 5px );
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
     width: fit-content;
     padding-left: 20px;
     padding-right: 20px;
@@ -215,7 +214,7 @@ body {
 	line-height: 45px;
 	padding: 0 14px;
 	text-decoration: none;
-	color: #000000;
+	color: white;
 	font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -254,7 +253,7 @@ body {
 	height: auto;
 	overflow: hidden;
 	width: 170px;
-	background: #444444;
+	background: #011835;
 	position: absolute;
 	z-index: 99;
 	display: none;
@@ -265,7 +264,7 @@ body {
 	width: 100%;
 }
 #menu ul.sub-menus a {
-	color: #FFFFFF;
+	color: white;
 	font-size: 16px;
 }
 #menu li:hover ul.sub-menus {
@@ -324,7 +323,7 @@ body {
 }
 
 /*media queries for about page*/
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1295px) {
 .photoandText {
     flex-direction: column;
     
@@ -524,3 +523,16 @@ textarea {
     transform: scale(1.05);
   }
   
+.pageDesc {
+    background-color: #022d62;
+    color: white;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    max-width: 80vw;
+    border-radius: 10px;
+    text-align: center;
+}
